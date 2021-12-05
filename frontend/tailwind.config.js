@@ -1,7 +1,9 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require("tailwindcss/defaultTheme")
 
+/** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
 	mode: "jit",
+
 	purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
@@ -40,18 +42,23 @@ module.exports = {
 				DEFAULT: {
 					css: {
 						color: theme("colors.gray.900"),
-            p : {
-              marginTop: ".5em",
-              marginBottom: ".5em",
-            },
+						p: {
+							marginTop: ".5em",
+							marginBottom: ".5em",
+						},
+						h1: {
+							fontFamily: `${theme("fontFamily.satoshi")}`,
+						},
 						h2: {
 							fontWeight: "700",
-							letterSpacing: theme("letterSpacing.tight"),
+							// letterSpacing: theme("letterSpacing.tight"),
 							color: theme("colors.gray.900"),
+							fontFamily: `${theme("fontFamily.satoshi")}`,
 						},
 						h3: {
 							fontWeight: "600",
 							color: theme("colors.gray.900"),
+							fontFamily: `${theme("fontFamily.satoshi")}`,
 						},
 						"ol li:before": {
 							fontWeight: "600",
@@ -83,8 +90,6 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [require("@tailwindcss/typography")],
-	presets: [
-		require('tw-utils/font/satoshi')
-	]
+	plugins: [require("@tailwindcss/typography"), require("@tailwindcss/line-clamp")],
+	presets: [require("tw-utils/font/satoshi")],
 }
