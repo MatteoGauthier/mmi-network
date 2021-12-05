@@ -1,3 +1,4 @@
+import '../styles/fonts.css'
 import '@/styles/index.css'
 
 function MyApp({ Component, pageProps }) {

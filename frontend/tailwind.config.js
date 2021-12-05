@@ -84,4 +84,7 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [require("@tailwindcss/typography")],
+	presets: [
+		require('tw-utils/font/satoshi')
+	]
 }
