@@ -27,26 +27,27 @@ export default function Index({ allPosts, preview }) {
 							</h1>
 							<hr className="border-t border-2 border-black mt-3" />
 							<p className="text-xl mt-6 mb-4">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, eget vulputate in at porta nulla dui sit
-								leo. Posuere suscipit adipiscing vel volutpat, bibendum. Eget nunc, nisi, consequat, dis interdum.{" "}
+								Cet outil est destiné à ceux qui découvrent le réseau. A travers plusieurs articles, nous définissons
+								les règles élémentaires de ce domaine. Bien entendu, cette plateforme est destinée à évoluer avec le
+								temps.
 							</p>
 							{/* <div className="bg-red-900 w-full h-full"></div> */}
 							<div className="relative flex-auto mb-10 overflow-hidden rounded-md">
 								<Image layout="fill" objectFit="cover" quality={90} src={NetworkImageSrc} />
 							</div>
 						</div>
-						<div className="grid overflow-scroll grid-cols-2 gap-x-7 auto-rows-min gap-y-6">
+						<div className="grid  grid-cols-2 gap-x-7 auto-rows-min gap-y-6">
 							{allPosts.map((post) => (
 								<Link key={post.slug} href={`/posts/${post.slug}`}>
 									<a className="shadow-lg group cursor-pointer border overflow-hidden border-gray-100 rounded-lg bg-white h-44">
-										<div className="flex flex-col justify-between h-full pt-4 ">
+										<div className="flex relative flex-col justify-between h-full pt-4 ">
 											<div>
 												<h2 className="text-2xl mb-1 px-3 font-bold font-satoshi leading-tight tracking-tight">
 													{post.title}
 												</h2>
 												<p className="text-sm px-3 text-gray-700 line-clamp-3">{post.excerpt}</p>
 											</div>
-											<button className="bg-black group-hover:translate-y-0 transform-gpu translate-y-7 transition-transform duration-300 ease-in-out self-end px-3 h-10 flex items-center rounded-sm w-full text-white">
+											<button className="bg-black bottom-0 inset-x-0 absolute group-hover:translate-y-0 transform-gpu translate-y-7 transition-transform duration-300 ease-in-out self-end px-3 h-10 flex items-center rounded-sm w-full text-white">
 												Découvrir
 											</button>
 										</div>
