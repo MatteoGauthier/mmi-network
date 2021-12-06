@@ -2,7 +2,7 @@
 title: Visualisons un réseau
 excerpt: Une approche visuel du réseau informatique
 date: "2021-05-12"
-slug: visualisationd-d-un-reseau
+slug: visualisations-d-un-reseau
 status: published
 ---
 

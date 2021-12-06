@@ -37,9 +37,9 @@ export default function Index({ allPosts, preview }) {
 						</div>
 						<div className="grid overflow-scroll grid-cols-2 gap-x-7 auto-rows-min gap-y-6">
 							{allPosts.map((post) => (
-								<Link href={`/posts/${post.slug}`}>
+								<Link	key={post.slug} href={`/posts/${post.slug}`}>
 									<a
-										key={post.slug}
+									
 										className="shadow-lg group cursor-pointer border overflow-hidden border-gray-100 rounded-lg bg-white h-44"
 									>
 										<div className="flex flex-col justify-between h-full pt-4 ">
