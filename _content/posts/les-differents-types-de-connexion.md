@@ -1,4 +1,10 @@
-# Les différents types de connexion
+---
+title: Les différents types de connexion
+excerpt: Coup d'oeil sur les différents types de connexion qui nous relient dans un reseau informatique
+date: "2021-05-12"
+slug: les-differents-types-de-connexion
+status: published
+---
 
 Vous avez dû le remarquer, la connexion n’est pas la même pour tous. Les vitesses de connexion varient en fonction du lieu, du nombre d’utilisateurs, etc.
 
