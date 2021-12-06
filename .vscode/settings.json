@@ -1,0 +1,5 @@
+{
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public"
+}
