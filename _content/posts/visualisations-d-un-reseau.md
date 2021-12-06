@@ -30,4 +30,4 @@ Le schéma physique pour déployer le réseau, installer et câbler le matériel
 
 Voici les deux schémas :
 
-![schema](schema.png)
+![schema](/schema.png)

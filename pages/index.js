@@ -16,10 +16,10 @@ export default function Index({ allPosts, preview }) {
 		<>
 			<Layout preview={preview}>
 				<Head>
-					<title>Next.js Blog Example with {CMS_NAME}</title>
+					<title>Le réseau pour les nuls</title>
 				</Head>
 				<div>
-					<div className="grid overflow-hidden h-screen max-h-screen grid-cols-2 gap-x-12 xl:p-6 lg:p-4">
+					<div className="grid md:overflow-hidden md:h-screen md:max-h-screen md:grid-cols-2 grid-cols-1 gap-x-12 xl:p-6 p-4">
 						<div className="flex flex-col h-screen max-h-screen">
 							<h1>
 								<span className="visually-hidden">le reseau pour les nuls</span>
@@ -37,11 +37,8 @@ export default function Index({ allPosts, preview }) {
 						</div>
 						<div className="grid overflow-scroll grid-cols-2 gap-x-7 auto-rows-min gap-y-6">
 							{allPosts.map((post) => (
-								<Link	key={post.slug} href={`/posts/${post.slug}`}>
-									<a
-									
-										className="shadow-lg group cursor-pointer border overflow-hidden border-gray-100 rounded-lg bg-white h-44"
-									>
+								<Link key={post.slug} href={`/posts/${post.slug}`}>
+									<a className="shadow-lg group cursor-pointer border overflow-hidden border-gray-100 rounded-lg bg-white h-44">
 										<div className="flex flex-col justify-between h-full pt-4 ">
 											<div>
 												<h2 className="text-2xl mb-1 px-3 font-bold font-satoshi leading-tight tracking-tight">

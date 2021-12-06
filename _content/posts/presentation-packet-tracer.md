@@ -33,7 +33,7 @@ Vous pouvez télécharger Packet Tracer gratuitement en vous inscrivant sur le s
 
 Pour cela, rendez-vous sur le[ site des cours en ligne](https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer) Cisco. Cliquez sur “Sign up Today” ("Inscrivez-vous aujourd’hui") pour vous inscrire au cours “Introduction to Packet Tracer”.
 
-![packet 1](packet-1.png)
+![packet 1](/packet-1.jpg)
 
 Cliquez sur "Sign up today" sur la page d’inscription au cours d’introduction à Packet Tracer
 
