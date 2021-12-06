@@ -8,7 +8,7 @@ status: published
 
 Mais à quoi ressemble un réseau :
 
-![network](network.png)
+![network](/network.png)
 
 C’est un réseau de type LAN. Regardons ensemble sa contenance.
 

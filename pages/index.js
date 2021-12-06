@@ -36,7 +36,7 @@ export default function Index({ allPosts, preview }) {
 								<Image layout="fill" objectFit="cover" quality={90} src={NetworkImageSrc} />
 							</div>
 						</div>
-						<div className="grid overflow-y-scroll grid-cols-2 gap-x-7 auto-rows-min gap-y-6">
+						<div className="grid overflow-y-scroll grid-cols-2 gap-x-7 auto-rows-min gap-y-4">
 							{allPosts.map((post) => (
 								<Link key={post.slug} href={`/posts/${post.slug}`}>
 									<a className="shadow-lg group cursor-pointer border overflow-hidden border-gray-100 rounded-lg bg-white h-44">
