@@ -27,8 +27,9 @@ export default function Index({ allPosts, preview }) {
 							</h1>
 							<hr className="border-t border-2 border-black mt-3" />
 							<p className="text-xl mt-6 mb-4">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, eget vulputate in at porta nulla dui sit
-								leo. Posuere suscipit adipiscing vel volutpat, bibendum. Eget nunc, nisi, consequat, dis interdum.{" "}
+								Cet outil est destiné à ceux qui découvrent le réseau. A travers plusieurs articles, nous définissons
+								les règles élémentaires de ce domaine. Bien entendu, cette plateforme est destinée à évoluer avec le
+								temps.
 							</p>
 							{/* <div className="bg-red-900 w-full h-full"></div> */}
 							<div className="relative flex-auto mb-10 overflow-hidden rounded-md">
