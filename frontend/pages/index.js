@@ -7,6 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import NetworkImageSrc from "../assets/images/clarisse-croset--tikpxRBcsA-unsplash.jpg"
+import { getAllPosts } from "@/lib/data"
 
 export default function Index({ allPosts, preview }) {
 	const heroPost = allPosts[0]
@@ -31,30 +32,10 @@ export default function Index({ allPosts, preview }) {
 							</p>
 							{/* <div className="bg-red-900 w-full h-full"></div> */}
 							<div className="relative flex-auto mb-10 overflow-hidden rounded-md">
-								<Image layout="fill" objectFit="cover"  quality={90} src={NetworkImageSrc} />
+								<Image layout="fill" objectFit="cover" quality={90} src={NetworkImageSrc} />
 							</div>
 						</div>
 						<div className="grid overflow-scroll grid-cols-2 gap-x-7 auto-rows-min gap-y-6">
-							{allPosts.map((post) => (
-								<Link href={`/posts/${post.slug}`}>
-									<a
-										key={post.slug}
-										className="shadow-lg group cursor-pointer border overflow-hidden border-gray-100 rounded-lg bg-white h-44"
-									>
-										<div className="flex flex-col justify-between h-full pt-4 ">
-											<div>
-												<h2 className="text-2xl mb-1 px-3 font-bold font-satoshi leading-tight tracking-tight">
-													{post.title}
-												</h2>
-												<p className="text-sm px-3 text-gray-700 line-clamp-3">{post.excerpt}</p>
-											</div>
-											<button className="bg-black group-hover:translate-y-0 transform-gpu translate-y-7 transition-transform duration-300 ease-in-out self-end px-3 h-10 flex items-center rounded-sm w-full text-white">
-												Découvrir
-											</button>
-										</div>
-									</a>
-								</Link>
-							))}
 							{allPosts.map((post) => (
 								<Link href={`/posts/${post.slug}`}>
 									<a
@@ -83,9 +64,10 @@ export default function Index({ allPosts, preview }) {
 	)
 }
 
-export async function getStaticProps({ preview = null }) {
-	const allPosts = (await getAllPostsForHome(preview)) || []
+export async function getStaticProps() {
+	const allPosts = getAllPosts(["slug", "title", "excerpt", "date", "tags"])
+
 	return {
-		props: { allPosts, preview },
+		props: { allPosts },
 	}
 }
