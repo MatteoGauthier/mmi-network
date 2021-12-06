@@ -13,7 +13,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
 				{/* <CoverImage title={title} url={coverImage.url} /> */}
 				<PostTitle>{title}</PostTitle>
 			</div>
-			<div className="max-w-screen-xl mx-auto">
+			<div className="max-w-screen-xl">
 				<div className="mb-6 text-lg">
 					<Date dateString={date} />
 				</div>
